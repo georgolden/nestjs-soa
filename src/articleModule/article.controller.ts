@@ -1,9 +1,10 @@
 // Decorators
 import { Controller, Get, Post, Param, Body } from '@nestjs/common';
-// Types
-import { ArticleCreateDto } from './dto/articleCreateDto';
+// No Idea why it is not a type
 import { ArticleService } from './article.service';
-import { Article as ArticleModel } from '@prisma/client';
+// Types
+import type { ArticleCreateDto } from './dto/articleCreateDto';
+import type { Article as ArticleModel } from '@prisma/client';
 
 @Controller('article')
 export class ArticleController {
